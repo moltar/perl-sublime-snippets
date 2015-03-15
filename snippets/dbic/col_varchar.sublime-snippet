@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[#--------------------------------------------------------------------------#
+# ${1:column_name}
+#--------------------------------------------------------------------------#
+
+=head2 $1()
+
+=cut
+
+column $1 => {
+    data_type   => 'varchar',
+    size        => ${2:255},
+    is_nullable => ${3:0},
+};]]></content>
+  <description>[varchar] DBIx::Class</description>
+  <scope>source.perl</scope>
+  <tabTrigger>dbic:varchar</tabTrigger>
+</snippet>
+

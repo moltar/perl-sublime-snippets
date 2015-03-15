@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[#--------------------------------------------------------------------------#
+# ATTRIBUTES
+#--------------------------------------------------------------------------#
+
+=head1 ATTRIBUTES
+
+=cut
+]]></content>
+  <description>[attributes] POD</description>
+  <scope>source.perl</scope>
+  <tabTrigger>pod:attr</tabTrigger>
+</snippet>
+

@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[#--------------------------------------------------------------------------#
+# METHODS
+#--------------------------------------------------------------------------#
+
+=head1 METHODS
+
+=cut
+]]></content>
+  <description>[methods] POD</description>
+  <scope>source.perl</scope>
+  <tabTrigger>pod:methods</tabTrigger>
+</snippet>
+

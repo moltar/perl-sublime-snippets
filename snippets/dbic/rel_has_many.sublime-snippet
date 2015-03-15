@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[has_many ${1:accessor_name} => '::${2:RelatedClass}', '${3:their_fk_column_id}';]]></content>
+  <description>[has_many] DBIx::Class</description>
+  <scope>source.perl</scope>
+  <tabTrigger>has_many</tabTrigger>
+</snippet>
+

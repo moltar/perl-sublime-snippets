@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[#--------------------------------------------------------------------------#
+# field: ${1:field_name}
+#--------------------------------------------------------------------------#
+
+=head2 $1
+
+=cut
+
+has_field '$1' => (
+    type         => 'Hidden',
+    required     => ${2:1},
+    default      => '$3',
+);
+$4]]></content>
+  <description>HTML::FH</description>
+  <scope>source.perl</scope>
+  <tabTrigger>has_field:hidden</tabTrigger>
+</snippet>
+

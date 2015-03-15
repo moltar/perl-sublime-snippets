@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[#--------------------------------------------------------------------------#
+# ${1:method}
+#--------------------------------------------------------------------------#
+
+=head2 ${1}($2)
+
+=cut
+
+sub $1 {
+    my (\$self, $2) = @_;
+
+    $3
+
+    return ${4:1};
+}
+$5]]></content>
+  <description>sub public [Perl]</description>
+  <scope>source.perl</scope>
+  <tabTrigger>sub.public</tabTrigger>
+</snippet>
+

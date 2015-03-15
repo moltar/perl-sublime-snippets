@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[\$c->response->redirect->(${1:url});
+
+]]></content>
+  <description>redirect [Catalyst]</description>
+  <scope>source.perl</scope>
+  <tabTrigger>cat:redirect</tabTrigger>
+</snippet>
+

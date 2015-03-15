@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[\$c->uri_for(${1:action}$2)$3]]></content>
+  <description>uri_for [Catalyst]</description>
+  <scope>source.perl</scope>
+  <tabTrigger>cat:uri_for</tabTrigger>
+</snippet>
+

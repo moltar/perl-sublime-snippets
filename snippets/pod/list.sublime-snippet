@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[=over 4
+
+=item ${1:item}
+
+=item ${2:item}
+
+=item ${3:item}
+
+=back]]></content>
+  <description>[list] POD</description>
+  <scope>source.perl</scope>
+  <tabTrigger>pod:list</tabTrigger>
+</snippet>
+

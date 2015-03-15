@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[use warnings;
+use strict;
+
+]]></content>
+  <description>strictures [Perl]</description>
+  <scope>source.perl</scope>
+  <tabTrigger>ws</tabTrigger>
+</snippet>
+

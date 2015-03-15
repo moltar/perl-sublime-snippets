@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[requires '${1:Module}' => '${2:version}';$3]]></content>
+  <description>requires [cpanfile]</description>
+  <scope>source.perl</scope>
+  <tabTrigger>requires</tabTrigger>
+</snippet>
+

@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[\$c->controller('${1:Controller}')->action_for('${2:action}')$3]]></content>
+  <description>action_for [Catalyst]</description>
+  <scope>source.perl</scope>
+  <tabTrigger>cat:action_for</tabTrigger>
+</snippet>
+

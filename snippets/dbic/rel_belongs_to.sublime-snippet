@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[belongs_to ${1:accessor_name} => '::${2:RelatedClass}', '${3:our_fk_column_id}';]]></content>
+  <description>[belongs_to] DBIx::Class</description>
+  <scope>source.perl</scope>
+  <tabTrigger>belongs_to</tabTrigger>
+</snippet>
+

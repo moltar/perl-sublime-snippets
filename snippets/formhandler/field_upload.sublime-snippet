@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[#--------------------------------------------------------------------------#
+# field: ${1:field_name}
+#--------------------------------------------------------------------------#
+
+=head2 $1
+
+=cut
+
+has '+enctype' => (default => 'multipart/form-data');
+
+has_field '$1' => (
+    type         => 'Upload',
+    required     => ${2:1},
+    # min_size    => 1,  ## bytes
+    # max_size    => 10, ## bytes
+);
+$3]]></content>
+  <description>HTML::FH</description>
+  <scope>source.perl</scope>
+  <tabTrigger>has_field:upload</tabTrigger>
+</snippet>
+

@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[warn ">>> ${1:text}\n"; ## TODO: remove #donotcommit]]></content>
+  <description>warn [Perl]</description>
+  <scope>source.perl</scope>
+  <tabTrigger>warn</tabTrigger>
+</snippet>
+

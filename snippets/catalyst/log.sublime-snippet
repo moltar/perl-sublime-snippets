@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[\$c->log->${1:debug}('${2:statement}');]]></content>
+  <description>log [Catalyst]</description>
+  <scope>source.perl</scope>
+  <tabTrigger>cat:log</tabTrigger>
+</snippet>
+

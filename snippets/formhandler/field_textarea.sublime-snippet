@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[#--------------------------------------------------------------------------#
+# field: ${1:field_name}
+#--------------------------------------------------------------------------#
+
+=head2 $1
+
+=cut
+
+has_field '$1' => (
+    type         => 'TextArea',
+    required     => ${2:1},
+    default      => '$3',
+    # minlength    => 1,
+    # maxlength    => 10,
+    # cols         => 100,
+    # rows         => 10,
+);
+$4]]></content>
+  <description>HTML::FH</description>
+  <scope>source.perl</scope>
+  <tabTrigger>has_field:textarea</tabTrigger>
+</snippet>
+
