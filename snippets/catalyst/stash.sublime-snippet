@@ -1,5 +1,5 @@
 <snippet>
-  <content><![CDATA[\$c->stash->{${1:stash_name}} = $2;]]></content>
+  <content><![CDATA[\$c->stash->{${1:stash_name}}$2]]></content>
   <description>stash [Catalyst]</description>
   <scope>source.perl</scope>
   <tabTrigger>cat:stash</tabTrigger>
