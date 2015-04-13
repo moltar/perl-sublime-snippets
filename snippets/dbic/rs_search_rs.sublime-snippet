@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[search_rs({ $1 => $2 })$3]]></content>
+  <description>[search_rs] DBIx::Class</description>
+  <scope>source.perl</scope>
+  <tabTrigger>search_rs</tabTrigger>
+</snippet>
+

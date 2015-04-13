@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[create({ $1 => $2 });]]></content>
+  <description>[create] DBIx::Class</description>
+  <scope>source.perl</scope>
+  <tabTrigger>create</tabTrigger>
+</snippet>
+

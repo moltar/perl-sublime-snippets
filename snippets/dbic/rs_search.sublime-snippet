@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[search({ $1 => $2 })$3]]></content>
+  <description>[search] DBIx::Class</description>
+  <scope>source.perl</scope>
+  <tabTrigger>search</tabTrigger>
+</snippet>
+
