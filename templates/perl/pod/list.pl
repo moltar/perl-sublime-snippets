@@ -1,5 +1,6 @@
 # pod:list
 # [list] POD
+# source.perl
 
 =over 4
 

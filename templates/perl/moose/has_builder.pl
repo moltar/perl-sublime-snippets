@@ -1,5 +1,6 @@
 # has:builder
 # [has builder] Moose
+# source.perl
 
 #--------------------------------------------------------------------------#
 # attribute: ${1:attribute}

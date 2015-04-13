@@ -1,5 +1,6 @@
 # try-catch
 # try { } catch { }
+# source.perl
 
 ${1}try {
     ${2:# danger danger, enter my chamber}

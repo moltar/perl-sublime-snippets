@@ -1,5 +1,6 @@
 # dbic:varchar
 # [varchar] DBIx::Class
+# source.perl
 
 #--------------------------------------------------------------------------#
 # ${1:column_name}

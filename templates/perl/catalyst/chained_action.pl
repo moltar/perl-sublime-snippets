@@ -1,5 +1,6 @@
 # cat:chained
 # Chained Action [Catalyst]
+# source.perl
 
 =head2 ${1:action}
 

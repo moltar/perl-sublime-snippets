@@ -1,5 +1,6 @@
 # has:default
 # [has default] Moose
+# source.perl
 
 #--------------------------------------------------------------------------#
 # attribute: ${1:attribute}
