@@ -3,13 +3,22 @@
 use warnings;
 use strict;
 
-use Path::Tiny;
+use Path::Tiny qw(path);
 use XML::Smart;
 
-my $ext       = 'pl';
-my $dir       = Path::Tiny->new($ARGV[0] || '.');
-my $templates = $dir->child('templates');
-my $snippets  = $dir->child('snippets');
+unless (@ARGV == 2) {
+    die "Need 2 arguments: templates (source) dir and snippets (dest) dir.\n";
+}
+
+my $templates = path($ARGV[0]);
+unless ($templates->is_dir) {
+    die "$templates is not a valid directory.\n";
+}
+
+my $snippets = path($ARGV[1]);
+unless ($snippets->is_dir) {
+    die "$snippets is not a valid directory.\n";
+}
 
 my $iter = $templates->iterator(
     {   recurse         => 1,
@@ -18,21 +27,23 @@ my $iter = $templates->iterator(
 );
 
 while (my $path = $iter->()) {
-    if ($path->is_file && $path->basename =~ m{\.$ext$}) {
+    if ($path->is_file) {
         print "Processing $path\n";
 
         my ($header, $content) = split(/\n{2}/, scalar $path->slurp, 2);
-        my ($trigger, $description) = split(/\n/, $header);
+        my ($trigger, $description, $scope) = split(/\n/, $header);
 
-        $trigger =~ s{#\s*}{};
-        $description =~ s{#\s*}{};
+        $trigger     = _clean_header($trigger);
+        $description = _clean_header($description);
+        $scope       = _clean_header($scope);
+        $scope       = _fix_scope($scope);
 
         my $xml = XML::Smart->new('');
         $xml->{snippet} = {
             content     => $content,
             tabTrigger  => $trigger,
             description => $description,
-            scope       => 'source.perl',
+            scope       => $scope,
         };
 
         $xml->{snippet}->set_node(1);
@@ -43,7 +54,7 @@ while (my $path = $iter->()) {
 
         my $rel          = $path->relative($templates);
         my $snippet_file = $snippets->child($rel);
-        my $basename     = $snippet_file->basename(".$ext");
+        my $basename     = $snippet_file->basename(qr/\.?\w*$/);
         $snippet_file
             = $snippet_file->parent->child("$basename.sublime-snippet");
 
@@ -53,4 +64,16 @@ while (my $path = $iter->()) {
 
         $snippet_file->spew($xml->data(noheader => 1, nometagen => 1));
     }
+}
+
+sub _clean_header {
+    my $value = shift;
+    return $value unless $value;
+    $value =~ s{[#/]*\s*}{};
+    return $value;
+}
+
+sub _fix_scope {
+    my $scope = shift;
+
 }
