@@ -1,5 +1,5 @@
 # has_field:boolean
-# HTML::FH
+# HTML::FH Boolean
 # source.perl
 
 #--------------------------------------------------------------------------#

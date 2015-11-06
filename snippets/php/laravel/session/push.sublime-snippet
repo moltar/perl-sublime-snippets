@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[Session::push('${1:key}', ${2:'${3:value}'});
+]]></content>
+  <description>[L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>session:push</tabTrigger>
+</snippet>
+

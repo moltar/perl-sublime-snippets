@@ -13,7 +13,7 @@ has_field '$1' => (
     default      => '$4',
 );
 $5]]></content>
-  <description>HTML::FH</description>
+  <description>HTML::FH Generic</description>
   <scope>source.perl</scope>
   <tabTrigger>has_field:generic</tabTrigger>
 </snippet>

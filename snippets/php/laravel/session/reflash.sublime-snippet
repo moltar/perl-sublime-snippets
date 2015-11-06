@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[// reflash the current flash data for another request
+Session::reflash();
+]]></content>
+  <description>[L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>session:reflash</tabTrigger>
+</snippet>
+

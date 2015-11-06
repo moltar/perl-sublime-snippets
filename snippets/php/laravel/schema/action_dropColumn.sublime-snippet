@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[\$table->dropColumn('${1:from}', '${2:to}');
+]]></content>
+  <description>[L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>table:dropColumn</tabTrigger>
+</snippet>
+

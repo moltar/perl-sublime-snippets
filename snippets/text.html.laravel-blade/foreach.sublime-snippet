@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[@foreach (\$${1:list}s as \$${1})
+    $2
+@endforeach
+]]></content>
+  <description>@foreach [Blade]</description>
+  <scope>text.html.laravel-blade</scope>
+  <tabTrigger>foreach</tabTrigger>
+</snippet>
+

@@ -5,6 +5,7 @@ use strict;
 
 use Path::Tiny qw(path);
 use XML::Smart;
+use JSON::XS qw(encode_json);
 
 unless (@ARGV == 2) {
     die "Need 2 arguments: templates (source) dir and snippets (dest) dir.\n";
@@ -26,6 +27,7 @@ my $iter = $templates->iterator(
     },
 );
 
+my %atom;
 while (my $path = $iter->()) {
     if ($path->is_file) {
         print "Processing $path\n";
@@ -36,7 +38,6 @@ while (my $path = $iter->()) {
         $trigger     = _clean_header($trigger);
         $description = _clean_header($description);
         $scope       = _clean_header($scope);
-        $scope       = _fix_scope($scope);
 
         my $xml = XML::Smart->new('');
         $xml->{snippet} = {
@@ -63,17 +64,21 @@ while (my $path = $iter->()) {
         }
 
         $snippet_file->spew($xml->data(noheader => 1, nometagen => 1));
+
+        ## atom snippets
+        my $atom_source = join(', ', map { ".$_" } split(/\s*,\s*/, $scope));
+        $atom{$atom_source}{$trigger || $description} = {
+            prefix => $trigger,
+            body => $content,
+        };
     }
 }
+
+$snippets->child('atom.json')->spew(JSON::XS->new->pretty->encode(\%atom));
 
 sub _clean_header {
     my $value = shift;
     return $value unless $value;
     $value =~ s{[#/]*\s*}{};
     return $value;
-}
-
-sub _fix_scope {
-    my $scope = shift;
-
 }

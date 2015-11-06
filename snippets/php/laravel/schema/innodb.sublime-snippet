@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[\$table->engine = 'InnoDB';
+]]></content>
+  <description>InnoDB [L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>table:innodb</tabTrigger>
+</snippet>
+

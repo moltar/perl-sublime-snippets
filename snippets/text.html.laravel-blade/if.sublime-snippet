@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[@if ($1)
+    $2
+@endif
+]]></content>
+  <description>@if [Blade]</description>
+  <scope>text.html.laravel-blade</scope>
+  <tabTrigger>if</tabTrigger>
+</snippet>
+

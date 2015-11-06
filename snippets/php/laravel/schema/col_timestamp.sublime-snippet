@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[\$table->timestamp('${1:column_name}');
+]]></content>
+  <description>[L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>table:timestamp</tabTrigger>
+</snippet>
+

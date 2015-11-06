@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[[% ${1:var} %]
+]]></content>
+  <description>[% var %]</description>
+  <scope>source.tt2,text.html.tt2,source.tt3,text.html.tt3</scope>
+  <tabTrigger>var</tabTrigger>
+</snippet>
+

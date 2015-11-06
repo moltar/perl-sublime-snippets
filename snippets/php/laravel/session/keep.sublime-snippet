@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[// reflashing a subset of flash data
+Session::keep(['${1:key}']);
+]]></content>
+  <description>[L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>session:keep</tabTrigger>
+</snippet>
+

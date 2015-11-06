@@ -1,0 +1,5 @@
+var
+[% var %]
+source.tt2,text.html.tt2,source.tt3,text.html.tt3
+
+[% ${1:var} %]

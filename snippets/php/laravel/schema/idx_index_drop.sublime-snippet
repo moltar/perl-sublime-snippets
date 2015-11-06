@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[\$table->dropIndex('${1:table_name}_${2:column_name}_index');
+]]></content>
+  <description>[L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>table:index_drop</tabTrigger>
+</snippet>
+

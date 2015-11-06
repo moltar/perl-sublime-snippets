@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[// remove ${1:key} from the session
+Session::forget('$1');
+]]></content>
+  <description>[L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>session:forget</tabTrigger>
+</snippet>
+

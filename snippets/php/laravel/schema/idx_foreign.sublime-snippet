@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[\$table->foreign('${1:object}_id')->references('${2:id}')->on('${3:${1}s}');
+]]></content>
+  <description>FK [L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>table:foreign</tabTrigger>
+</snippet>
+

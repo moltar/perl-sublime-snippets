@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[\$table->dropUnique('${1:table_name}_${2:column_name}_unique');
+]]></content>
+  <description>[L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>table:unique_drop</tabTrigger>
+</snippet>
+

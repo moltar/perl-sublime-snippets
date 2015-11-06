@@ -1,0 +1,40 @@
+// ng:directive
+// [NG]
+// source.js
+
+(function () {
+    'use strict';
+
+    angular
+        .module('${1:module}')
+        .directive('${2:directiveName}', ${2});
+
+    // minification-safe injection
+    // make sure to duplicate unquoted names as an argument to ${2} function
+    ${2}.\$inject = ['${3:\$interval}'];
+
+    /**
+     * @desc
+     * @ngInject
+     */
+	function $2($3) {
+        var directive = {
+            link: ${2}Link,
+            templateUrl: '',
+            scope: {
+                customerInfo: '=info',
+                customer: '=', // same as '=customer'
+            },
+            // 'A' - only matches attribute name
+            // 'E' - only matches element name
+            // 'C' - only matches class name
+            restrict: 'EA'
+        };
+
+        return directive;
+
+        function ${2}Link(scope, element, attrs) {
+            $4
+        }
+	}
+})();

@@ -13,7 +13,7 @@ has_field '$1' => (
     default      => ${3:0},
 );
 $4]]></content>
-  <description>HTML::FH</description>
+  <description>HTML::FH Boolean</description>
   <scope>source.perl</scope>
   <tabTrigger>has_field:boolean</tabTrigger>
 </snippet>

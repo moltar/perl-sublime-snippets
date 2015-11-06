@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[@section('${1:content}')
+    $2
+@stop
+]]></content>
+  <description>@section [Blade]</description>
+  <scope>text.html.laravel-blade</scope>
+  <tabTrigger>section</tabTrigger>
+</snippet>
+

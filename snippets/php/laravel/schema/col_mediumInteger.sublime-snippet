@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[\$table->mediumInteger('${1:column_name}')${2:->unsigned()};
+]]></content>
+  <description>[L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>table:mediumInteger</tabTrigger>
+</snippet>
+

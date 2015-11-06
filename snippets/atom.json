@@ -1,0 +1,522 @@
+{
+   ".Wrap text in [% l('') %] for TT." : {
+      "__loc" : {
+         "body" : "[% l('$SELECTION$1') %]",
+         "prefix" : "__loc"
+      }
+   },
+   ".source.php, .source.php.embedded.block.html" : {
+      "table:float" : {
+         "body" : "\\$table->float('${1:column_name}');\n",
+         "prefix" : "table:float"
+      },
+      "session:flash" : {
+         "body" : "Session::flash('${1:key}', ${2:'${3:value}'});\n",
+         "prefix" : "session:flash"
+      },
+      "session:get" : {
+         "body" : "Session::get('${1:key}', ${2:'${3:default}'});\n",
+         "prefix" : "session:get"
+      },
+      "table:integer" : {
+         "body" : "\\$table->integer('${1:column_name}')${2:->unsigned()};\n",
+         "prefix" : "table:integer"
+      },
+      "table:renameColumn" : {
+         "body" : "\\$table->renameColumn('${1:from}', '${2:to}');\n",
+         "prefix" : "table:renameColumn"
+      },
+      "session:flush" : {
+         "body" : "// removing all items from the session\nSession::flush();\n",
+         "prefix" : "session:flush"
+      },
+      "table:char" : {
+         "body" : "\\$table->char('${1:column_name}', ${2:size});\n",
+         "prefix" : "table:char"
+      },
+      "table:enum" : {
+         "body" : "\\$table->enum('${1:column_name}', ['${2:option}', '${3:option}'${4:, '${5:option}'}]);\n",
+         "prefix" : "table:enum"
+      },
+      "table:string" : {
+         "body" : "\\$table->string('${1:column_name}'${2:, ${3:size}});\n",
+         "prefix" : "table:string"
+      },
+      "table:decimal" : {
+         "body" : "// precision: maximum number of digits\n// scale: number of digits to the right of the decimal point\n\\$table->decimal('${1:column_name}', ${2:precision}, ${3:scale});\n",
+         "prefix" : "table:decimal"
+      },
+      "table:after" : {
+         "body" : "->after('${1:value}')\n",
+         "prefix" : "table:after"
+      },
+      "table:default" : {
+         "body" : "->default('${1:value}')\n",
+         "prefix" : "table:default"
+      },
+      "table:boolean" : {
+         "body" : "\\$table->boolean('${1:column_name}');\n",
+         "prefix" : "table:boolean"
+      },
+      "table:date" : {
+         "body" : "\\$table->date('${1:column_name}');\n",
+         "prefix" : "table:date"
+      },
+      "table:smallInteger" : {
+         "body" : "\\$table->smallInteger('${1:column_name}')${2:->unsigned()};\n",
+         "prefix" : "table:smallInteger"
+      },
+      "table:timestamps" : {
+         "body" : "\\$table->timestamps();\n",
+         "prefix" : "table:timestamps"
+      },
+      "table:increments" : {
+         "body" : "\\$table->increments('${1:id}');\n",
+         "prefix" : "table:increments"
+      },
+      "session:reflash" : {
+         "body" : "// reflash the current flash data for another request\nSession::reflash();\n",
+         "prefix" : "session:reflash"
+      },
+      "table:foreign" : {
+         "body" : "\\$table->foreign('${1:object}_id')->references('${2:id}')->on('${3:${1}s}');\n",
+         "prefix" : "table:foreign"
+      },
+      "table:dropColumn" : {
+         "body" : "\\$table->dropColumn('${1:from}', '${2:to}');\n",
+         "prefix" : "table:dropColumn"
+      },
+      "schema:create" : {
+         "body" : "Schema::create('${1:table}', function ($table) {\n    \\$table->increments('id');\n});\n",
+         "prefix" : "schema:create"
+      },
+      "session:forget" : {
+         "body" : "// remove ${1:key} from the session\nSession::forget('$1');\n",
+         "prefix" : "session:forget"
+      },
+      "table:unique" : {
+         "body" : "\\$table->unique('${1:column_name}');\n",
+         "prefix" : "table:unique"
+      },
+      "table:primary" : {
+         "body" : "\\$table->primary(['${1:column_1}', '${2:column_2}']);\n",
+         "prefix" : "table:primary"
+      },
+      "session:push" : {
+         "body" : "Session::push('${1:key}', ${2:'${3:value}'});\n",
+         "prefix" : "session:push"
+      },
+      "session:has" : {
+         "body" : "Session::has('${1:key}');\n",
+         "prefix" : "session:has"
+      },
+      "table:unique_drop" : {
+         "body" : "\\$table->dropUnique('${1:table_name}_${2:column_name}_unique');\n",
+         "prefix" : "table:unique_drop"
+      },
+      "table:timestamp" : {
+         "body" : "\\$table->timestamp('${1:column_name}');\n",
+         "prefix" : "table:timestamp"
+      },
+      "table:index_drop" : {
+         "body" : "\\$table->dropIndex('${1:table_name}_${2:column_name}_index');\n",
+         "prefix" : "table:index_drop"
+      },
+      "table:jsonb" : {
+         "body" : "\\$table->jsonb('${1:column_name}');\n",
+         "prefix" : "table:jsonb"
+      },
+      "table:time" : {
+         "body" : "\\$table->time('${1:column_name}');\n",
+         "prefix" : "table:time"
+      },
+      "table:mediumInteger" : {
+         "body" : "\\$table->mediumInteger('${1:column_name}')${2:->unsigned()};\n",
+         "prefix" : "table:mediumInteger"
+      },
+      "table:binary" : {
+         "body" : "\\$table->binary('${1:data}');\n",
+         "prefix" : "table:binary"
+      },
+      "table:double" : {
+         "body" : "// precision: maximum number of digits\n// scale: number of digits to the right of the decimal point\n\\$table->double('${1:column_name}', ${2:precision}, ${3:scale});\n",
+         "prefix" : "table:double"
+      },
+      "mail:attach" : {
+         "body" : "\\$message->attach(${1:\\$pathToFile}, ['as' => ${2:\\$display}, 'mime' => ${3:\\$mime}]);\n",
+         "prefix" : "mail:attach"
+      },
+      "table:primary_drop" : {
+         "body" : "\\$table->dropPrimary('${1:table_name}_${2:column_name}_primary');\n",
+         "prefix" : "table:primary_drop"
+      },
+      "table:json" : {
+         "body" : "\\$table->json('${1:column_name}');\n",
+         "prefix" : "table:json"
+      },
+      "table:nullable" : {
+         "body" : "->nullable()\n",
+         "prefix" : "table:nullable"
+      },
+      "session:keep" : {
+         "body" : "// reflashing a subset of flash data\nSession::keep(['${1:key}']);\n",
+         "prefix" : "session:keep"
+      },
+      "table:innodb" : {
+         "body" : "\\$table->engine = 'InnoDB';\n",
+         "prefix" : "table:innodb"
+      },
+      "table:unsigned" : {
+         "body" : "->unsigned()\n",
+         "prefix" : "table:unsigned"
+      },
+      "table:bigIncrements" : {
+         "body" : "\\$table->bigIncrements('${1:id}');\n",
+         "prefix" : "table:bigIncrements"
+      },
+      "table:longText" : {
+         "body" : "\\$table->longText('${1:column_name}');\n",
+         "prefix" : "table:longText"
+      },
+      "table:mediumText" : {
+         "body" : "\\$table->mediumText('${1:column_name}');\n",
+         "prefix" : "table:mediumText"
+      },
+      "session:put" : {
+         "body" : "Session::put('${1:key}', ${2:'${3:value}'});\n",
+         "prefix" : "session:put"
+      },
+      "table:text" : {
+         "body" : "\\$table->text('${1:column_name}');\n",
+         "prefix" : "table:text"
+      },
+      "schema:rename" : {
+         "body" : "Schema::rename('${1:from}', '${2:to}');\n",
+         "prefix" : "schema:rename"
+      },
+      "table:bigInteger" : {
+         "body" : "\\$table->bigInteger('${1:column_name}')${2:->unsigned()};\n",
+         "prefix" : "table:bigInteger"
+      },
+      "table:softDeletes" : {
+         "body" : "\\$table->softDeletes();\n",
+         "prefix" : "table:softDeletes"
+      },
+      "mail:send" : {
+         "body" : "Mail::send('emails/${1:view_name}', ${2:['key' => 'value']}, function(\\$message)\n{\n    \\$message->to(${3:'${4:to@example.com}'}, ${5:'${6:John Smith}'});\n    \\$message->subject(${7:'${8:subject}'});\n});\n",
+         "prefix" : "mail:send"
+      },
+      "table:index" : {
+         "body" : "\\$table->index('${1:column_name}');\n",
+         "prefix" : "table:index"
+      },
+      "table:morphs" : {
+         "body" : "\\$table->morphs('${1:column_name}');\n",
+         "prefix" : "table:morphs"
+      },
+      "table:tinyInteger" : {
+         "body" : "\\$table->tinyInteger('${1:column_name}')->unsigned();\n",
+         "prefix" : "table:tinyInteger"
+      },
+      "table:dateTime" : {
+         "body" : "\\$table->dateTime('${1:column_name}');\n",
+         "prefix" : "table:dateTime"
+      },
+      "table:rememberToken" : {
+         "body" : "\\$table->rememberToken();\n",
+         "prefix" : "table:rememberToken"
+      },
+      "session:all" : {
+         "body" : "Session::all();\n",
+         "prefix" : "session:all"
+      },
+      "table:change" : {
+         "body" : "->change()\n",
+         "prefix" : "table:change"
+      },
+      "session:pull" : {
+         "body" : "Session::pull('${1:key}', ${2:'${3:default}'});\n",
+         "prefix" : "session:pull"
+      }
+   },
+   ".source.perl" : {
+      "search" : {
+         "body" : "search({ $1 => $2 })$3",
+         "prefix" : "search"
+      },
+      "pod:methods" : {
+         "body" : "#--------------------------------------------------------------------------#\n# METHODS\n#--------------------------------------------------------------------------#\n\n=head1 METHODS\n\n=cut\n",
+         "prefix" : "pod:methods"
+      },
+      "dbic:varchar" : {
+         "body" : "#--------------------------------------------------------------------------#\n# ${1:column_name}\n#--------------------------------------------------------------------------#\n\n=head2 $1()\n\n=cut\n\ncolumn $1 => {\n    data_type   => 'varchar',\n    size        => ${2:255},\n    is_nullable => ${3:0},\n};",
+         "prefix" : "dbic:varchar"
+      },
+      "has_field:text" : {
+         "body" : "#--------------------------------------------------------------------------#\n# field: ${1:field_name}\n#--------------------------------------------------------------------------#\n\n=head2 $1\n\n=cut\n\nhas_field '$1' => (\n    type         => 'Text',\n    required     => ${2:1},\n    default      => '$3',\n    # size         => '',\n    # minlength    => 1,\n    # maxlength    => 10,\n);\n$4",
+         "prefix" : "has_field:text"
+      },
+      "has:builder" : {
+         "body" : "#--------------------------------------------------------------------------#\n# attribute: ${1:attribute}\n#--------------------------------------------------------------------------#\n\n=head2 $1\n\n=cut\n\nhas $1 => (\n    is      => 'ro',\n    isa     => '$2',\n    lazy    => 1,\n    builder => '_build_$1',\n);\n\nsub _build_$1 {\n    my \\$self = shift;\n\n    $3\n\n    return $4;\n}\n$5",
+         "prefix" : "has:builder"
+      },
+      "has_field:select" : {
+         "body" : "#--------------------------------------------------------------------------#\n# field: ${1:field_name}\n#--------------------------------------------------------------------------#\n\n=head2 $1\n\n=cut\n\nhas_field '$1' => (\n    type         => 'Select',\n    required     => ${2:1},\n    # empty_select    => 'Select...',\n    # localize_labels => 0,\n    # multiple        => 0,\n);\n\n#--------------------------------------------------------------------------#\n# attribute: options_$1\n#--------------------------------------------------------------------------#\n\n=head2 options_$1\n\n=cut\n\nhas options_$1 => (\n    is      => 'ro',\n    isa     => 'ArrayRef[HashRef]',\n    lazy    => 1,\n    builder => '_build_options_$1',\n);\n\nsub _build_options_$1 {\n    my \\$self = shift;\n\n    return [\n        map {\n            {   value => \\$_, label => \\$_ }\n        } @some_array\n    ];\n}\n$3",
+         "prefix" : "has_field:select"
+      },
+      "cat:uri_for" : {
+         "body" : "\\$c->uri_for(${1:action}$2)$3",
+         "prefix" : "cat:uri_for"
+      },
+      "belongs_to" : {
+         "body" : "belongs_to ${1:accessor_name} => '::${2:RelatedClass}', '${3:our_fk_column_id}';",
+         "prefix" : "belongs_to"
+      },
+      "has_field:textarea" : {
+         "body" : "#--------------------------------------------------------------------------#\n# field: ${1:field_name}\n#--------------------------------------------------------------------------#\n\n=head2 $1\n\n=cut\n\nhas_field '$1' => (\n    type         => 'TextArea',\n    required     => ${2:1},\n    default      => '$3',\n    # minlength    => 1,\n    # maxlength    => 10,\n    # cols         => 100,\n    # rows         => 10,\n);\n$4",
+         "prefix" : "has_field:textarea"
+      },
+      "has_field:upload" : {
+         "body" : "#--------------------------------------------------------------------------#\n# field: ${1:field_name}\n#--------------------------------------------------------------------------#\n\n=head2 $1\n\n=cut\n\nhas '+enctype' => (default => 'multipart/form-data');\n\nhas_field '$1' => (\n    type         => 'Upload',\n    required     => ${2:1},\n    # min_size    => 1,  ## bytes\n    # max_size    => 10, ## bytes\n);\n$3",
+         "prefix" : "has_field:upload"
+      },
+      "cat:log" : {
+         "body" : "\\$c->log->${1:debug}('${2:statement}');",
+         "prefix" : "cat:log"
+      },
+      "has_field:hidden" : {
+         "body" : "#--------------------------------------------------------------------------#\n# field: ${1:field_name}\n#--------------------------------------------------------------------------#\n\n=head2 $1\n\n=cut\n\nhas_field '$1' => (\n    type         => 'Hidden',\n    required     => ${2:1},\n    default      => '$3',\n);\n$4",
+         "prefix" : "has_field:hidden"
+      },
+      "dbic:any" : {
+         "body" : "#--------------------------------------------------------------------------#\n# ${1:column_name}\n#--------------------------------------------------------------------------#\n\n=head2 $1()\n\n=cut\n\ncolumn $1 => {\n    data_type           => '$2',\n    size                => 255,\n    is_nullable         => ${3:0},\n    is_numeric          => ${4:0},\n    is_auto_increment   => ${5:0},\n    default_value       => '',\n    extra               => { unsigned => 1 },\n};$6",
+         "prefix" : "dbic:any"
+      },
+      "pod:head2" : {
+         "body" : "#--------------------------------------------------------------------------#\n# ${1:method}\n#--------------------------------------------------------------------------#\n\n=head2 ${1}\n\n=cut\n$2",
+         "prefix" : "pod:head2"
+      },
+      "pod:attr" : {
+         "body" : "#--------------------------------------------------------------------------#\n# ATTRIBUTES\n#--------------------------------------------------------------------------#\n\n=head1 ATTRIBUTES\n\n=cut\n",
+         "prefix" : "pod:attr"
+      },
+      "has:default" : {
+         "body" : "#--------------------------------------------------------------------------#\n# attribute: ${1:attribute}\n#--------------------------------------------------------------------------#\n\n=head2 $1\n\n=cut\n\nhas $1 => (\n    is       => 'ro',\n    isa      => '$2',\n    required => 0,\n    default  => sub { $3 },\n);\n$4",
+         "prefix" : "has:default"
+      },
+      "dbic:bool" : {
+         "body" : "#--------------------------------------------------------------------------#\n# ${1:column_name}\n#--------------------------------------------------------------------------#\n\n=head2 $1()\n\n=cut\n\ncolumn $1 => {\n    data_type           => 'boolean',\n    is_nullable         => 0,\n    default_value       => ${2:0},\n};$3",
+         "prefix" : "dbic:bool"
+      },
+      "ddp" : {
+         "body" : "use DDP; p ${1:var}; ## TODO: remove #donotcommit",
+         "prefix" : "ddp"
+      },
+      "cat:redirect" : {
+         "body" : "\\$c->response->redirect(${1:url});\n\n",
+         "prefix" : "cat:redirect"
+      },
+      "cat:action_for" : {
+         "body" : "\\$c->controller('${1:Controller}')->action_for('${2:action}')$3",
+         "prefix" : "cat:action_for"
+      },
+      "has_field:boolean" : {
+         "body" : "#--------------------------------------------------------------------------#\n# field: ${1:field_name}\n#--------------------------------------------------------------------------#\n\n=head2 $1\n\n=cut\n\nhas_field '$1' => (\n    type         => 'Boolean',\n    required     => ${2:0},\n    default      => ${3:0},\n);\n$4",
+         "prefix" : "has_field:boolean"
+      },
+      "try-catch" : {
+         "body" : "${1}try {\n    ${2:# danger danger, enter my chamber}\n} catch {\n    ${3:# handle errors}\n} finally {\n    ${4:# clean up code}\n};\n\n",
+         "prefix" : "try-catch"
+      },
+      "ws" : {
+         "body" : "use warnings;\nuse strict;\n\n",
+         "prefix" : "ws"
+      },
+      "sub.test" : {
+         "body" : "#--------------------------------------------------------------------------#\n# ${1:method}\n#--------------------------------------------------------------------------#\n\n=head2 test_${1}\n\nTests for C<$1> method.\n\n=cut\n\nsub test_$1 {\n    my (\\$self) = @_;\n\n    $2\n\n    return 1;\n}",
+         "prefix" : "sub.test"
+      },
+      "warn" : {
+         "body" : "warn \">>> ${1:text}\\n\"; ## TODO: remove #donotcommit",
+         "prefix" : "warn"
+      },
+      "search_rs" : {
+         "body" : "search_rs({ $1 => $2 })$3",
+         "prefix" : "search_rs"
+      },
+      "printf" : {
+         "body" : "printf('${1:format}', $2)$3",
+         "prefix" : "printf"
+      },
+      "requires" : {
+         "body" : "requires '${1:Module}' => '${2:version}';$3",
+         "prefix" : "requires"
+      },
+      "sprintf" : {
+         "body" : "sprintf('${1:format}', $2)$3",
+         "prefix" : "sprintf"
+      },
+      "create" : {
+         "body" : "create({ $1 => $2 });",
+         "prefix" : "create"
+      },
+      "cat:stash" : {
+         "body" : "\\$c->stash->{${1:stash_name}}$2",
+         "prefix" : "cat:stash"
+      },
+      "constant" : {
+         "body" : "=head2 $1\n\n$2\n\n=cut\n\nReadonly::Scalar our $1 => $3;",
+         "prefix" : "constant"
+      },
+      "has_many" : {
+         "body" : "has_many ${1:accessor_name} => '::${2:RelatedClass}', '${3:their_fk_column_id}';",
+         "prefix" : "has_many"
+      },
+      "dbic:int" : {
+         "body" : "#--------------------------------------------------------------------------#\n# ${1:column_name}\n#--------------------------------------------------------------------------#\n\n=head2 $1()\n\n=cut\n\ncolumn $1 => {\n    data_type    => 'int',\n    is_nullable  => ${2:0},\n    is_numeric   => 1,\n    extra        => { unsigned => 1 },\n};$3",
+         "prefix" : "dbic:int"
+      },
+      "has_field:generic" : {
+         "body" : "#--------------------------------------------------------------------------#\n# field: ${1:field_name}\n#--------------------------------------------------------------------------#\n\n=head2 $1\n\n=cut\n\nhas_field '$1' => (\n    type         => '$2',\n    required     => ${3:1},\n    default      => '$4',\n);\n$5",
+         "prefix" : "has_field:generic"
+      },
+      "cat:chained" : {
+         "body" : "=head2 ${1:action}\n\nCatalyst Controller action C<$1>.\n\n=cut\n\nsub $1 : Chained('$2') PathPart('$1') Args(0) {\n    my (\\$self, \\$c) = @_;\n\n$3\n\n    return 1;\n}",
+         "prefix" : "cat:chained"
+      },
+      "sub.public" : {
+         "body" : "#--------------------------------------------------------------------------#\n# ${1:method}\n#--------------------------------------------------------------------------#\n\n=head2 ${1}($2)\n\n=cut\n\nsub $1 {\n    my (\\$self, $2) = @_;\n\n    $3\n\n    return ${4:1};\n}\n$5",
+         "prefix" : "sub.public"
+      },
+      "pod:list" : {
+         "body" : "=over 4\n\n=item ${1:item}\n\n=item ${2:item}\n\n=item ${3:item}\n\n=back",
+         "prefix" : "pod:list"
+      },
+      "sub.private" : {
+         "body" : "#--------------------------------------------------------------------------#\n# _${1:method}($2)\n#--------------------------------------------------------------------------#\n\nsub _$1 {\n    my (\\$self, $2) = @_;\n\n    $3\n\n    return ${4:1};\n}\n$5",
+         "prefix" : "sub.private"
+      },
+      "cat:param" : {
+         "body" : "\\$c->request->params->{${1:param}}$2",
+         "prefix" : "cat:param"
+      },
+      "update" : {
+         "body" : "update({ $1 => $2 });",
+         "prefix" : "update"
+      },
+      "header" : {
+         "body" : "#--------------------------------------------------------------------------#\n# ${1:header}\n#--------------------------------------------------------------------------#\n$2",
+         "prefix" : "header"
+      }
+   },
+   ".source.js" : {
+      "success" : {
+         "body" : "success(function() {\n    $1\n})\n.error(function() {\n    $2\n});",
+         "prefix" : "success"
+      },
+      "ng:restangular-service" : {
+         "body" : "(function () {\n    'use strict';\n\n    angular\n        .module('${1:module}')\n        .factory('${2:name}', ${2});\n\n    // minification-safe injection\n    // make sure to duplicate unquoted names as an argument to ${2} function\n    ${2}.\\$inject = ['${3:Restangular}'];\n\n    /**\n     * @desc\n     * @ngInject\n     */\n    function ${2}($3) {\n        return $3.service('${2/(.*)/\\L\\1\\E/i}s');\n    }\n})();",
+         "prefix" : "ng:restangular-service"
+      },
+      "ng:directive" : {
+         "body" : "(function () {\n    'use strict';\n\n    angular\n        .module('${1:module}')\n        .directive('${2:directiveName}', ${2});\n\n    // minification-safe injection\n    // make sure to duplicate unquoted names as an argument to ${2} function\n    ${2}.\\$inject = ['${3:\\$interval}'];\n\n    /**\n     * @desc\n     * @ngInject\n     */\n\tfunction $2($3) {\n        var directive = {\n            link: ${2}Link,\n            templateUrl: '',\n            scope: {\n                customerInfo: '=info',\n                customer: '=', // same as '=customer'\n            },\n            // 'A' - only matches attribute name\n            // 'E' - only matches element name\n            // 'C' - only matches class name\n            restrict: 'EA'\n        };\n\n        return directive;\n\n        function ${2}Link(scope, element, attrs) {\n            $4\n        }\n\t}\n})();",
+         "prefix" : "ng:directive"
+      },
+      "ng:module" : {
+         "body" : "(function () {\n    'use strict';\n\n    angular\n        .module('${1:module}', [\n            '${2:dependencies}'\n        ]);\n})();",
+         "prefix" : "ng:module"
+      },
+      "ng:service" : {
+         "body" : "(function () {\n    'use strict';\n\n    angular\n        .module('${1:module}')\n        .service('${2:Service}', ${2});\n\n    // minification-safe injection\n    // make sure to duplicate unquoted names as an argument to ${2} function\n    ${2}.\\$inject = ['${3:\\$routeParams}'];\n\n    /**\n     * @desc\n     * @ngInject\n     */\n    function ${2}($3) {\n        this.${4:func} = ${4:func};\n\n        ////////////////\n\n        function ${4:function}() {\n            $5\n        }\n    }\n})();",
+         "prefix" : "ng:service"
+      },
+      "console" : {
+         "body" : "console.log('${2:log}: ', ${1:object});",
+         "prefix" : "console"
+      },
+      "ng:route" : {
+         "body" : "// requires routerHelperProvider.js\n// https://github.com/johnpapa/angular-styleguide#style-y270\n(function () {\n    'use strict';\n\n    angular\n        .module('${1:module}')\n        .run(appRun);\n\n    /* @ngInject */\n    function appRun(routerHelper) {\n        routerHelper.configureStates(getStates());\n    }\n\n    /**\n     * @desc\n     */\n    function getStates() {\n        return [\n            ${2:// include route states here}\n        ];\n    }\n})();",
+         "prefix" : "ng:route"
+      },
+      "ng:restangular" : {
+         "body" : "(function () {\n    'use strict';\n\n    angular\n        .module('${1:module}')\n        .factory('${2:name}', ${2});\n\n    // minification-safe injection\n    // make sure to duplicate unquoted names as an argument to ${2} function\n    ${2}.\\$inject = ['Restangular'];\n\n    /**\n     * @desc\n     * @ngInject\n     */\n    function ${2}(Restangular) {\n        return Restangular.withConfig(function(RestangularConfigurer) {\n            RestangularConfigurer.setBaseUrl('${3:http://api.url}');\n\n            // unwrap data, if it's wrapped into an container element\n            RestangularConfigurer.setResponseExtractor(function(response, operation) {\n                if (operation === 'getList') {\n                    var newResponse = response.data;\n                    newResponse.meta = response.meta;\n                    newResponse.error = response.error;\n                    return newResponse;\n                }\n\n                return response;\n            });\n        });\n    }\n})();",
+         "prefix" : "ng:restangular"
+      },
+      "ng:routerHelperProvider" : {
+         "body" : "(function () {\n    'use strict';\n\n\tangular\n\t\t.module('blocks.router')\n\t\t.provider('routerHelper', routerHelperProvider);\n\n\t// minification-safe injection\n\trouterHelperProvider.$inject = ['$locationProvider', '$stateProvider', '$urlRouterProvider'];\n\n\t/* @ngInject */\n\tfunction routerHelperProvider($locationProvider, $stateProvider, $urlRouterProvider) {\n\t\t/* jshint validthis:true */\n\t\tthis.$get = RouterHelper;\n\n\t\t$locationProvider.html5Mode(true);\n\n\t\tRouterHelper.$inject = ['$state'];\n\t\t/* @ngInject */\n\t\tfunction RouterHelper($state) {\n\t\t\tvar hasOtherwise = false;\n\n\t\t\tvar service = {\n\t\t\t\tconfigureStates: configureStates,\n\t\t\t\tgetStates: getStates\n\t\t\t};\n\n\t\t\treturn service;\n\n\t\t\t///////////////\n\n\t\t\tfunction configureStates(states, otherwisePath) {\n\t\t\t\tstates.forEach(function(state) {\n\t\t\t\t\t$stateProvider.state(state.state, state.config);\n\t\t\t\t});\n\t\t\t\tif (otherwisePath && !hasOtherwise) {\n\t\t\t\t\thasOtherwise = true;\n\t\t\t\t\t$urlRouterProvider.otherwise(otherwisePath);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tfunction getStates() {\n\t\t\t\treturn $state.get();\n\t\t\t}\n\t\t}\n\t}\n})();",
+         "prefix" : "ng:routerHelperProvider"
+      },
+      "ng:factory" : {
+         "body" : "(function () {\n    'use strict';\n\n    angular\n        .module('${1:module}')\n        .factory('${2:name}', ${2});\n\n    // minification-safe injection\n    // make sure to duplicate unquoted names as an argument to ${2} function\n    ${2}.\\$inject = ['${3:\\$routeParams}'];\n\n    /**\n     * @desc\n     * @ngInject\n     */\n\tfunction ${2}($3) {\n        var service = {\n            ${4:func}: ${4:func}\n        };\n\n        return service;\n\n        ////////////////\n\n        function ${4:function}() {\n            $5\n        }\n\t}\n})();",
+         "prefix" : "ng:factory"
+      },
+      "ng:filter" : {
+         "body" : "(function () {\n    'use strict';\n\n    angular\n        .module('${1:module}')\n        .filter('${2:filter}', ${2});\n\n    /**\n     * @desc\n     */\n    function ${2}() {\n        return ${2:filter}Filter;\n\n        ////////////////\n\n        function ${2:filter}Filter(${3:params}) {\n            return ${3:params};\n        }\n    }\n})();",
+         "prefix" : "ng:filter"
+      },
+      "ng:route-state" : {
+         "body" : "// docs: https://github.com/angular-ui/ui-router/wiki\n{\n    state: '${1:stateName}',\n    config: {\n        abstract: true,\n        templateUrl: '${2:template}',\n        url: '/${3:url/:capture}',\n        controller: '${4:ControllerName}',\n        controllerAs: 'vm'\n    }\n}",
+         "prefix" : "ng:route-state"
+      },
+      "ng:controller" : {
+         "body" : "(function () {\n    'use strict';\n\n    angular\n        .module('${1:module}')\n        .controller('${2:Name}Controller', ${2}Controller);\n\n    // minification-safe injection\n    // // make sure to duplicate unquoted names as an argument to ${2}Controller function\n    ${2}Controller.\\$inject = ['${3:\\$routeParams}'];\n\n    /**\n     * @desc\n     * @ngInject\n     */\n\tfunction ${2}Controller($3) {\n\t\t/* jshint validthis: true */\n\t\tvar vm = this;\n        vm.title = '$2';\n\n        init${2}();\n\n        ////////////////\n\n        function init${2}() {\n            $4\n        }\n\t}\n})();",
+         "prefix" : "ng:controller"
+      }
+   },
+   ".source.tt2, .text.html.tt2, .source.tt3, .text.html.tt3" : {
+      "var" : {
+         "body" : "[% ${1:var} %]\n",
+         "prefix" : "var"
+      }
+   },
+   ".text.html.laravel-blade" : {
+      "if:elseif" : {
+         "body" : "@if ($1)\n    $2\n@elseif ($3)\n\t$4\n@else\n\t$5\n@endif\n",
+         "prefix" : "if:elseif"
+      },
+      "forelse" : {
+         "body" : "@forelse (\\$${1:list}s as \\$${1})\n    $2\n@empty\n\t$3\n@endforelse\n",
+         "prefix" : "forelse"
+      },
+      "for" : {
+         "body" : "@for (\\$${1:i} = 0; \\$$1 < $2; \\$$1++)\n    $3\n@endfor\n",
+         "prefix" : "for"
+      },
+      "include" : {
+         "body" : "@include('${1:view.name}'${2:, array('${3:some}'=>'${4:some}')})\n",
+         "prefix" : "include"
+      },
+      "section" : {
+         "body" : "@section('${1:content}')\n    $2\n@stop\n",
+         "prefix" : "section"
+      },
+      "yield" : {
+         "body" : "@yield('${1:content}')\n",
+         "prefix" : "yield"
+      },
+      "unless" : {
+         "body" : "@unless ($1)\n    $2\n@endunless\n",
+         "prefix" : "unless"
+      },
+      "if" : {
+         "body" : "@if ($1)\n    $2\n@endif\n",
+         "prefix" : "if"
+      },
+      "foreach" : {
+         "body" : "@foreach (\\$${1:list}s as \\$${1})\n    $2\n@endforeach\n",
+         "prefix" : "foreach"
+      },
+      "while" : {
+         "body" : "@while ($1)\n    $2\n@endwhile\n",
+         "prefix" : "while"
+      },
+      "if:else" : {
+         "body" : "@if ($1)\n    $2\n@else\n\t$3\n@endif\n",
+         "prefix" : "if:else"
+      },
+      "extends" : {
+         "body" : "@extends('layouts.${1:master}')\n\n@section('${2:content}')\n    $3\n@stop\n",
+         "prefix" : "extends"
+      }
+   }
+}

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[// removing all items from the session
+Session::flush();
+]]></content>
+  <description>[L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>session:flush</tabTrigger>
+</snippet>
+

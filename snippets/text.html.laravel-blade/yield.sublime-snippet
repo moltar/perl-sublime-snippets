@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[@yield('${1:content}')
+]]></content>
+  <description>@yield [Blade]</description>
+  <scope>text.html.laravel-blade</scope>
+  <tabTrigger>yield</tabTrigger>
+</snippet>
+

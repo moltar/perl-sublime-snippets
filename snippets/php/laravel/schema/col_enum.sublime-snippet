@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[\$table->enum('${1:column_name}', ['${2:option}', '${3:option}'${4:, '${5:option}'}]);
+]]></content>
+  <description>[L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>table:enum</tabTrigger>
+</snippet>
+

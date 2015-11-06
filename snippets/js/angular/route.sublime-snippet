@@ -1,0 +1,29 @@
+<snippet>
+  <content><![CDATA[// requires routerHelperProvider.js
+// https://github.com/johnpapa/angular-styleguide#style-y270
+(function () {
+    'use strict';
+
+    angular
+        .module('${1:module}')
+        .run(appRun);
+
+    /* @ngInject */
+    function appRun(routerHelper) {
+        routerHelper.configureStates(getStates());
+    }
+
+    /**
+     * @desc
+     */
+    function getStates() {
+        return [
+            ${2:// include route states here}
+        ];
+    }
+})();]]></content>
+  <description>[NG]</description>
+  <scope>source.js</scope>
+  <tabTrigger>ng:route</tabTrigger>
+</snippet>
+

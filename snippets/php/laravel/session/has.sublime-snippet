@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[Session::has('${1:key}');
+]]></content>
+  <description>[L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>session:has</tabTrigger>
+</snippet>
+

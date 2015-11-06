@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[Schema::create('${1:table}', function ($table) {
+    \$table->increments('id');
+});
+]]></content>
+  <description>Schema::create [L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>schema:create</tabTrigger>
+</snippet>
+

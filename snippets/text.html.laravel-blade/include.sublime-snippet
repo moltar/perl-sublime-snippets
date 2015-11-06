@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[@include('${1:view.name}'${2:, array('${3:some}'=>'${4:some}')})
+]]></content>
+  <description>@include [Blade]</description>
+  <scope>text.html.laravel-blade</scope>
+  <tabTrigger>include</tabTrigger>
+</snippet>
+

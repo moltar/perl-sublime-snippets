@@ -1,5 +1,5 @@
 # has_field:generic
-# HTML::FH
+# HTML::FH Generic
 # source.perl
 
 #--------------------------------------------------------------------------#

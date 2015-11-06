@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[Session::pull('${1:key}', ${2:'${3:default}'});
+]]></content>
+  <description>Default [L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>session:pull</tabTrigger>
+</snippet>
+

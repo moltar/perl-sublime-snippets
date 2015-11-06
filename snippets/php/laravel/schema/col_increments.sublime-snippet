@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[\$table->increments('${1:id}');
+]]></content>
+  <description>PK [L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>table:increments</tabTrigger>
+</snippet>
+

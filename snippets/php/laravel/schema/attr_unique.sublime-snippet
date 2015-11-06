@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[->unique()
+]]></content>
+  <description>[L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>table:unique</tabTrigger>
+</snippet>
+

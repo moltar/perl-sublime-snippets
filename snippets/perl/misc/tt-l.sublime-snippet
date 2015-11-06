@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[[% l('$SELECTION$1') %]]]></content>
+  <scope>Wrap text in [% l('') %] for TT.</scope>
+  <tabTrigger>__loc</tabTrigger>
+</snippet>
+

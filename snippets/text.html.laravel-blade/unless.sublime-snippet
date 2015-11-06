@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[@unless ($1)
+    $2
+@endunless
+]]></content>
+  <description>@unless [Blade]</description>
+  <scope>text.html.laravel-blade</scope>
+  <tabTrigger>unless</tabTrigger>
+</snippet>
+

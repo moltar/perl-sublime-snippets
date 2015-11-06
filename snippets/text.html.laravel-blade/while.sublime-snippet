@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[@while ($1)
+    $2
+@endwhile
+]]></content>
+  <description>@while [Blade]</description>
+  <scope>text.html.laravel-blade</scope>
+  <tabTrigger>while</tabTrigger>
+</snippet>
+

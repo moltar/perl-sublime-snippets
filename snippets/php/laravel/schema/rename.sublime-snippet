@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[Schema::rename('${1:from}', '${2:to}');
+]]></content>
+  <description>Schema::rename [L5]</description>
+  <scope>source.php, source.php.embedded.block.html</scope>
+  <tabTrigger>schema:rename</tabTrigger>
+</snippet>
+

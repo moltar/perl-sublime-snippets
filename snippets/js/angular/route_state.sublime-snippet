@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[// docs: https://github.com/angular-ui/ui-router/wiki
+{
+    state: '${1:stateName}',
+    config: {
+        abstract: true,
+        templateUrl: '${2:template}',
+        url: '/${3:url/:capture}',
+        controller: '${4:ControllerName}',
+        controllerAs: 'vm'
+    }
+}]]></content>
+  <description>[NG]</description>
+  <scope>source.js</scope>
+  <tabTrigger>ng:route-state</tabTrigger>
+</snippet>
+

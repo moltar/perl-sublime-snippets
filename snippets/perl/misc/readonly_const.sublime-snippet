@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[=head2 $1
+
+$2
+
+=cut
+
+Readonly::Scalar our $1 => $3;]]></content>
+  <description>constant [Readonly]</description>
+  <scope>source.perl</scope>
+  <tabTrigger>constant</tabTrigger>
+</snippet>
+
